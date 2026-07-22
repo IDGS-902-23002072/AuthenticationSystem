@@ -1,0 +1,17 @@
+# Angular
+node_modules/
+dist/
+.angular/
+
+# ASP.NET Core
+bin/
+obj/
+
+# Visual Studio
+.vs/
+
+# VS Code
+.vscode/
+
+# Variables de entorno
+.env
