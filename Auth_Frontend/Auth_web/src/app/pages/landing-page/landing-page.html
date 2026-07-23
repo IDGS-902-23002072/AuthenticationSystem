@@ -6,15 +6,23 @@
   <section class="contenido">
     <article>
       <span>¿Ya tienes cuenta?</span>
-      <button type="button" class="login">
+      <button type="button" class="login" (click)="isLoginModalActive.set(true)">
         Login
       </button>
     </article>
     <article>
       <span>¿Eres nuevo?</span>
-      <button type="button" class="registro">
+      <button type="button" class="registro" (click)="isRegistroModalActive.set(true)">
         Registro
       </button>
     </article>
   </section>
 </body>
+
+@if( isLoginModalActive() ){
+    <app-login-modal  (cerrar)="isLoginModalActive.set(false)" />
+}
+
+@if ( isRegistroModalActive() ) {
+  <app-registro-modal />
+}

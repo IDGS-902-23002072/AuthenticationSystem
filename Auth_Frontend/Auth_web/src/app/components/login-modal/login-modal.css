@@ -1,0 +1,120 @@
+:host {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(0,0,0,.45);
+}
+
+.modal{
+    position: relative;
+    width: 400px;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0,0,0,.3);
+}
+
+.btn-cerrar{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+
+    width: 36px;
+    height: 36px;
+
+    border: none;
+    border-radius: 50%;
+    background: transparent;
+
+    font-size: 1.2rem;
+    cursor: pointer;
+
+    transition:
+        background-color .25s ease,
+        transform .2s ease;
+}
+
+.btn-cerrar:hover{
+    background: #f0f0f0;
+    transform: rotate(90deg);
+}
+
+.btn-cerrar:active{
+    transform: scale(.9);
+}
+
+.login-container{
+    width: 350px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login-container h2{
+    margin: 0;
+    text-align: center;
+    font-family: "Franklin Gothic Medium", Arial, sans-serif;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label{
+    font-weight: bold;
+    font-size: .95rem;
+}
+
+input{
+    padding: 12px;
+    border: 1px solid #cfcfcf;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color .25s ease,
+                box-shadow .25s ease;
+}
+
+input:focus{
+    border-color: purple;
+    box-shadow: 0 0 0 3px rgba(128,0,128,.15);
+}
+
+.btn-login{
+    margin-top: 10px;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: purple;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition:
+        background-color .25s ease,
+        transform .2s ease,
+        box-shadow .25s ease;
+}
+
+.btn-login:hover{
+    background: #8e24aa;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(128,0,128,.25);
+}
+
+.btn-login:active{
+    transform: scale(.98);
+}
