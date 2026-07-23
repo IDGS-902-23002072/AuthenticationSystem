@@ -1,0 +1,79 @@
+:host {
+  display: block;
+}
+
+.titulos {
+  display: flexbox;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: x-large;
+  justify-self: center;
+  text-align: center;
+  background-color: purple;
+  color: white;
+  width: 100vw;
+  padding: 10px;
+  margin-top: -10px;
+}
+
+.contenido {
+  display: flex;
+  height: calc(100vh - 150px);
+}
+
+button {
+  border: 1px;
+  padding: 55px;
+  border-radius: 10%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: large;
+  font-weight: bolder;
+  transition:
+    background-color 0.3s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+   box-shadow: 0 4px 8px rgba(0,0,0,.15);
+}
+
+button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0,0,0,.3);
+}
+
+button:active {
+    transform: scale(0.96);
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  gap: 50px;
+}
+
+span {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.login {
+  background-color: purple;
+  color: white;
+}
+
+.login:hover {
+    background-color: rgb(61, 7, 103);
+    color: white;
+}
+
+.registro {
+    background-color: black;
+  color: white;
+}
+
+.registro:hover{
+  background-color: rgb(50, 48, 48);
+  color: white;
+}
